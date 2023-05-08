@@ -111,4 +111,10 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+#PATHS
+export PATH="/home/slablet/.local/bin:$PATH"
+export PATH="/home/slablet/scp:$PATH"
+
+#ALIASES
 alias config='/usr/bin/git --git-dir=/home/slablet/.cfg/ --work-tree=/home/slablet' 

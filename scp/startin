@@ -1,0 +1,21 @@
+#!/bin/bash --init-file
+<<Block
+xrandr --delmode HDMI-1 &&/ "lilP" #for lack of if statement
+xrandr --rmmode "lilP"
+xrandr --newmode "lilP"  124.88  1872 1968 2168 2464  1091 1092 1095 1120  -HSync +Vsync
+xrandr --addmode HDMI-1 "lilP"
+xrandr --output HDMI-1 --rotate normal &&\
+xrandr --output HDMI-1 --mode lilP
+Block
+sed -i s/size=../size=44/ ~/.Xresources
+xrdb ~/.Xresources
+#i3-msg kill
+i3-msg workspace 9 #0 is cursed, black hole
+i3-msg split h
+urxvt -hold -e bash -c "x11vnc -usepw -display :0 -forever" &
+urxvt -hold -e bash -c "cd ~/Papertty/ && poetry run papertty --driver epd3in7 --nopartial vnc --display 0 --password asdf --sleep 0 --rotate 270" &
+sleep 5 #hacky, `wait` or ommiting `&` cannot continue while new urxvt windows are open
+urxvt -e bash -c "i3-msg workspace 1" #workaround for straight command ending continuing processes
+#i3-msg kill #last change
+#sleep 3 #hacky, `wait` or ommiting `&` cannot continue while new urxvt windows are open
+bash
