@@ -1,0 +1,10 @@
+:set incsearch
+:set ignorecase
+:set showcmd
+noremap ; l
+noremap l k
+noremap k j
+noremap j h
+"nunmap <C-I> 
+filetype plugin indent on
+syntax on
