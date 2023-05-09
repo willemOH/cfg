@@ -180,3 +180,5 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
 }
+exec urxvt -e bash -c "startin" 
+#exec /home/slablet/scp/startin
