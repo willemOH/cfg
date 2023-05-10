@@ -1,0 +1,2 @@
+source "gpg -dq ~/.mutt/gmail.gpg |"
+#source "gmail"
