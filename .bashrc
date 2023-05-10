@@ -67,7 +67,7 @@ unset color_prompt force_color_prompt
 case "$TERM" in
 xterm*|rxvt*)
 #    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
-	PS1='\w'
+	PS1='\w '
     ;;
 *)
     ;;
@@ -118,4 +118,8 @@ export PATH="/home/slablet/.local/bin:$PATH"
 export PATH="/home/slablet/scp:$PATH"
 
 #ALIASES
-alias config='/usr/bin/git --git-dir=/home/slablet/.cfg/ --work-tree=/home/slablet' 
+alias cfg='/usr/bin/git --git-dir=/home/slablet/.cfg/ --work-tree=/home/slablet' 
+alias v=vim
+export VISUAL=vim
+export EDITOR="$VISUAL"
+#set -o vi
