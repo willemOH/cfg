@@ -1,2 +1,21 @@
 source "gpg -dq ~/.mutt/gmail.gpg |"
-#source "gmail"
+
+set index_format="%2C %Z %d %-5.5L%e %-6.30s" 
+set date_format="!%m%d %I:%M%p"
+
+# latest emails first
+set sort = last-date-received
+
+# latest email in thread first`
+set sort = reverse-threads
+set sort_browser = reverse-date
+set sort_aux = date-received #reverse-last-date-received
+set record = "+INBOX"
+color normal black brightwhite 
+color tree black brightwhite
+color indicator brightwhite black 
+color hdrdefault brightwhite black #dont see difference
+color status brightwhite black 
+bind index,pager k next-entry
+bind index,pager l previous-entry 
+bind index j limit #just
