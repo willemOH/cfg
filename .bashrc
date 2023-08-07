@@ -114,11 +114,11 @@ if ! shopt -oq posix; then
 fi
 
 #PATHS
-export PATH="/home/slablet/.local/bin:$PATH"
-export PATH="/home/slablet/scp:$PATH"
+export PATH="/home/slabtop/.local/bin:$PATH"
+export PATH="/home/slabtop/scp:$PATH"
 
 #ALIASES
-alias cfg='/usr/bin/git --git-dir=/home/slablet/.cfg/ --work-tree=/home/slablet' 
+alias cfg='/usr/bin/git --git-dir=/home/slabtop/.cfg/ --work-tree=/home/slabtop' 
 alias v=vim
 export VISUAL=vim
 export EDITOR="$VISUAL"
