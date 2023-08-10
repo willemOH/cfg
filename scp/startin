@@ -13,7 +13,7 @@ sed -i s/size=../size=28/ ~/.Xresources
 xrdb ~/.Xresources
 i3-msg split h
 urxvt -hold -e bash -c "x11vnc -usepw -display :0 -forever" &
-urxvt -hold -e bash -c "cd ~/Papertty/ && poetry run papertty --driver epd3in7 --nopartial vnc --display 0 --password asdf --sleep 0 --rotate 270" &
+urxvt -hold -e bash -c "cd ~/PaperTTY/ && poetry run papertty --driver EPD3in7 --nopartial vnc --display 0 --password asdf --sleep 0 --rotate 270" &
 i3-msg move workspace 9 #creating urxvts in workspace 9 didn't work. Moving them is "correct" approach
 sleep 9
 i3-msg move workspace 9
