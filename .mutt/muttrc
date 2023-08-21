@@ -19,3 +19,5 @@ color status brightwhite black
 bind index,pager k next-entry
 bind index,pager l previous-entry 
 bind index j limit #just
+set header_cache = "~/.mutt/cache/headers"
+set message_cachedir= "~/.mutt/cache/bodies"
