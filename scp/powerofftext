@@ -1,0 +1,4 @@
+clear
+printf "SLABTOP\nwillemhilliard@proton.me\n207-331-2606\n"
+sleep 2 
+poweroff

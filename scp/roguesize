@@ -1,0 +1,2 @@
+sed -i s/size=../size=14/ ~/.Xresources
+xrdb ~/.Xresources
