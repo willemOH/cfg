@@ -120,6 +120,9 @@ export PATH="/home/slabtop/scp:$PATH"
 #ALIASES
 alias cfg='/usr/bin/git --git-dir=/home/slabtop/.cfg/ --work-tree=/home/slabtop' 
 alias v=vim
+alias po=powerofftext
+alias wifi="iwlist wlan0 scan | grep "ESSID"" 
+alias brave="w3m search.brave.com"
 export VISUAL=vim
 export EDITOR="$VISUAL"
 #set -o vi
