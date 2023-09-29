@@ -125,4 +125,4 @@ alias wifi="iwlist wlan0 scan | grep "ESSID""
 alias brave="w3m search.brave.com"
 export VISUAL=vim
 export EDITOR="$VISUAL"
-#set -o vi
+set -o vi
