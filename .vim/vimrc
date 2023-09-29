@@ -1,4 +1,5 @@
 :set incsearch
+:set hlsearch
 :set ignorecase
 :set showcmd
 noremap ; l
