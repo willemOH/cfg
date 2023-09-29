@@ -1,5 +1,6 @@
 #!/bin/bash --init-file
 <<Block
+CALLED FROM i3 CONFIG
 xrandr --delmode HDMI-1 &&/ "lilP" #for lack of if statement
 xrandr --rmmode "lilP"
 xrandr --newmode "lilP"  124.88  1872 1968 2168 2464  1091 1092 1095 1120  -HSync +Vsync
@@ -8,7 +9,7 @@ xrandr --output HDMI-1 --rotate normal &&\
 xrandr --output HDMI-1 --mode lilP
 Block
 sleep 5
-xdotool mousemove 1000 1000
+xdotool mousemove 10000 10000
 sed -i s/size=../size=28/ ~/.Xresources
 xrdb ~/.Xresources
 i3-msg split h
