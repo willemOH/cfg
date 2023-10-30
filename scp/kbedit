@@ -1,0 +1,2 @@
+udisksctl mount -b /dev/sdb1
+v /media/slabtop/4X12
