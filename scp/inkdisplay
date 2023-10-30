@@ -1,4 +1,4 @@
 sudo sh -c 'cat /home/slabtop/scp/exinkconfig.txt > /boot/config.txt'
-sed -i s/startin/startex/ ~/.config/i3/config
+#sed -i s/startin/startex/ ~/.config/i3/config
 reboot
 
