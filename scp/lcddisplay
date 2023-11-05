@@ -1,0 +1,2 @@
+sudo sh -c 'cat /home/slabtop/scp/confignormal.txt > /boot/config.txt'
+reboot
