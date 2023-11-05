@@ -123,6 +123,8 @@ alias v=vim
 alias po=powerofftext
 alias wifi="iwlist wlan0 scan | grep "ESSID"" 
 alias brave="w3m search.brave.com"
+#alias usbmount="sudo mount /dev/sdc2 /mnt/usb -o uid=slabtop,gid=slabtop"
+alias reddrive="udisksctl mount -b /dev/sdc2"
 export VISUAL=vim
 export EDITOR="$VISUAL"
 set -o vi
