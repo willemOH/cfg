@@ -128,3 +128,15 @@ alias reddrive="udisksctl mount -b /dev/sdc2"
 export VISUAL=vim
 export EDITOR="$VISUAL"
 set -o vi
+alias mounted="ls /media/slabtop/"
+#FUNCTIONS
+function mount() {
+	udisksctl mount -b /dev/$1;
+	cd /media/slabtop/
+}
+function unmount() {
+	umount /media/slabtop/$1&&
+		echo $1 'unmounted'
+}
+
+
