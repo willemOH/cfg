@@ -129,6 +129,7 @@ export VISUAL=vim
 export EDITOR="$VISUAL"
 set -o vi
 alias mounted="ls /media/slabtop/"
+alias backup="sudo rpi-clone sda -v"
 #FUNCTIONS
 function mount() {
 	udisksctl mount -b /dev/$1;
