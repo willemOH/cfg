@@ -1,0 +1,1 @@
+Config files and scripts for Slabtop, a distraction-free all-in-one laptop computer with a text-based UI and ePaper display running on Raspberry-Pi OS Lite <br><br>![alt text](https://freedomvessel.blog/images/slabtoptop.png)<br><br>![alt text](https://freedomvessel.blog/images/slabtopside.png)
